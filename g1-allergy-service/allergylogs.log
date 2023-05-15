@@ -1,0 +1,234 @@
+2023-05-09T20:11:58.126+05:30  INFO 12668 --- [restartedMain] c.revature.G1AllergyServiceApplication   : Starting G1AllergyServiceApplication using Java 17.0.6 with PID 12668 (C:\zServices\with-testing-all-microservices\g1-allergy-service\target\classes started by asus in C:\zServices\with-testing-all-microservices\g1-allergy-service)
+2023-05-09T20:11:58.134+05:30  INFO 12668 --- [restartedMain] c.revature.G1AllergyServiceApplication   : The following 1 profile is active: "production"
+2023-05-09T20:11:58.183+05:30  INFO 12668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-09T20:11:59.155+05:30  INFO 12668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:11:59.221+05:30  INFO 12668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:12:00.009+05:30  INFO 12668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2023-05-09T20:12:00.018+05:30  INFO 12668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T20:12:00.018+05:30  INFO 12668 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-09T20:12:00.102+05:30  INFO 12668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T20:12:00.103+05:30  INFO 12668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1919 ms
+2023-05-09T20:12:00.647+05:30  INFO 12668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T20:12:02.709+05:30 ERROR 12668 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.4.jar:3.0.4]
+	at com.revature.G1AllergyServiceApplication.main(G1AllergyServiceApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.4.jar:3.0.4]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:944) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:814) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	... 52 common frames omitted
+Caused by: java.net.UnknownHostException: No such host is known (g1pms-database.cvzvl1tpw1wd.us-east-1.rds.amazonaws.com)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:130) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	... 55 common frames omitted
+
+2023-05-09T20:12:02.722+05:30 ERROR 12668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-05-09T20:12:02.724+05:30  WARN 12668 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-05-09T20:12:02.733+05:30  INFO 12668 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-09T20:12:02.763+05:30  INFO 12668 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-09T20:12:02.788+05:30 ERROR 12668 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.4.jar:3.0.4]
+	at com.revature.G1AllergyServiceApplication.main(G1AllergyServiceApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.4.jar:3.0.4]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	... 36 common frames omitted
+
+2023-05-09T20:15:38.228+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : Starting G1AllergyServiceApplication using Java 17.0.6 with PID 10344 (C:\zServices\with-testing-all-microservices\g1-allergy-service\target\classes started by asus in C:\zServices\with-testing-all-microservices\g1-allergy-service)
+2023-05-09T20:15:38.231+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : The following 1 profile is active: "local"
+2023-05-09T20:15:38.283+05:30  INFO 10344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-09T20:15:39.336+05:30  INFO 10344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:15:39.463+05:30  INFO 10344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:15:39.696+05:30  INFO 10344 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=655a5e3a-debd-330c-ac7e-fc462e13e1e7
+2023-05-09T20:15:40.300+05:30  INFO 10344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2023-05-09T20:15:40.310+05:30  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T20:15:40.311+05:30  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-09T20:15:40.403+05:30  INFO 10344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T20:15:40.403+05:30  INFO 10344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2119 ms
+2023-05-09T20:15:41.009+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T20:15:41.327+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@703d1060
+2023-05-09T20:15:41.330+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T20:15:41.402+05:30  INFO 10344 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T20:15:42.232+05:30  INFO 10344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T20:15:42.777+05:30  WARN 10344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T20:15:44.177+05:30  INFO 10344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-09T20:15:44.318+05:30  WARN 10344 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-09T20:15:44.325+05:30  INFO 10344 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-05-09T20:15:44.420+05:30  INFO 10344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2023-05-09T20:15:44.423+05:30  INFO 10344 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-allergy-service-9002', name='g1-allergy-service', tags=[], address='host.docker.internal', meta={secure=false}, port=9002, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://host.docker.internal:9002/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-05-09T20:15:44.523+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : Started G1AllergyServiceApplication in 6.816 seconds (process running for 7.376)
+2023-05-09T20:15:49.361+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T20:15:49.361+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T20:15:49.364+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-09T20:16:18.653+05:30  WARN 10344 --- [http-nio-9002-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /api/v1/allergy-service/allergy
+2023-05-09T20:16:54.255+05:30  INFO 10344 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-09T20:16:54.270+05:30  INFO 10344 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-09T20:16:54.271+05:30  INFO 10344 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-09T20:16:54.281+05:30  INFO 10344 --- [Thread-7] o.s.c.c.s.ConsulServiceRegistry          : Deregistering service with consul: g1-allergy-service-9002
+2023-05-09T20:16:54.292+05:30  INFO 10344 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T20:16:54.316+05:30  INFO 10344 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-09T20:16:54.329+05:30  INFO 10344 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-09T20:16:54.551+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : Starting G1AllergyServiceApplication using Java 17.0.6 with PID 10344 (C:\zServices\with-testing-all-microservices\g1-allergy-service\target\classes started by asus in C:\zServices\with-testing-all-microservices\g1-allergy-service)
+2023-05-09T20:16:54.551+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : The following 1 profile is active: "local"
+2023-05-09T20:16:54.959+05:30  INFO 10344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:16:54.971+05:30  INFO 10344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:16:55.064+05:30  INFO 10344 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=655a5e3a-debd-330c-ac7e-fc462e13e1e7
+2023-05-09T20:16:55.188+05:30  INFO 10344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2023-05-09T20:16:55.189+05:30  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T20:16:55.189+05:30  INFO 10344 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-09T20:16:55.230+05:30  INFO 10344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T20:16:55.230+05:30  INFO 10344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2023-05-09T20:16:55.414+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-09T20:16:55.431+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d722dea
+2023-05-09T20:16:55.431+05:30  INFO 10344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-09T20:16:55.433+05:30  INFO 10344 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T20:16:55.523+05:30  INFO 10344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T20:16:55.753+05:30  WARN 10344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T20:16:56.718+05:30  INFO 10344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-09T20:16:56.925+05:30  WARN 10344 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-09T20:16:56.932+05:30  INFO 10344 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-05-09T20:16:56.978+05:30  INFO 10344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2023-05-09T20:16:56.979+05:30  INFO 10344 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-allergy-service-9002', name='g1-allergy-service', tags=[], address='host.docker.internal', meta={secure=false}, port=9002, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://host.docker.internal:9002/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-05-09T20:16:57.068+05:30  INFO 10344 --- [restartedMain] c.revature.G1AllergyServiceApplication   : Started G1AllergyServiceApplication in 2.652 seconds (process running for 79.921)
+2023-05-09T20:16:57.073+05:30  INFO 10344 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-09T20:17:03.044+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T20:17:03.045+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T20:17:03.048+05:30  INFO 10344 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-09T20:17:03.062+05:30  INFO 10344 --- [http-nio-9002-exec-1] com.revature.loggers.Logging             : method invokeclass com.revature.controller.AllergyController:getAllAllergies()arguments : []
+2023-05-09T20:17:03.064+05:30  INFO 10344 --- [http-nio-9002-exec-1] com.revature.loggers.Logging             : method invokeclass com.revature.serviceImpl.AllergyServiceImpl:allAllergies()arguments : []
+2023-05-09T20:17:03.326+05:30  INFO 10344 --- [http-nio-9002-exec-1] com.revature.loggers.Logging             : class com.revature.serviceImpl.AllergyServiceImpl:allAllergies()Response : [{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}]
+2023-05-09T20:17:03.346+05:30  INFO 10344 --- [http-nio-9002-exec-1] com.revature.loggers.Logging             : class com.revature.controller.AllergyController:getAllAllergies()Response : {"headers":{},"body":[{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}],"statusCode":"OK","statusCodeValue":200}
+2023-05-09T20:45:07.940+05:30  INFO 10344 --- [http-nio-9002-exec-5] com.revature.loggers.Logging             : method invokeclass com.revature.controller.AllergyController:getAllAllergies()arguments : []
+2023-05-09T20:45:07.940+05:30  INFO 10344 --- [http-nio-9002-exec-5] com.revature.loggers.Logging             : method invokeclass com.revature.serviceImpl.AllergyServiceImpl:allAllergies()arguments : []
+2023-05-09T20:45:07.952+05:30  INFO 10344 --- [http-nio-9002-exec-5] com.revature.loggers.Logging             : class com.revature.serviceImpl.AllergyServiceImpl:allAllergies()Response : [{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}]
+2023-05-09T20:45:07.961+05:30  INFO 10344 --- [http-nio-9002-exec-5] com.revature.loggers.Logging             : class com.revature.controller.AllergyController:getAllAllergies()Response : {"headers":{},"body":[{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}],"statusCode":"OK","statusCodeValue":200}
+2023-05-09T20:45:47.299+05:30  INFO 10344 --- [http-nio-9002-exec-9] com.revature.loggers.Logging             : method invokeclass com.revature.controller.AllergyController:getAllAllergies()arguments : []
+2023-05-09T20:45:47.299+05:30  INFO 10344 --- [http-nio-9002-exec-9] com.revature.loggers.Logging             : method invokeclass com.revature.serviceImpl.AllergyServiceImpl:allAllergies()arguments : []
+2023-05-09T20:45:47.304+05:30  INFO 10344 --- [http-nio-9002-exec-9] com.revature.loggers.Logging             : class com.revature.serviceImpl.AllergyServiceImpl:allAllergies()Response : [{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}]
+2023-05-09T20:45:47.313+05:30  INFO 10344 --- [http-nio-9002-exec-9] com.revature.loggers.Logging             : class com.revature.controller.AllergyController:getAllAllergies()Response : {"headers":{},"body":[{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}],"statusCode":"OK","statusCodeValue":200}
+2023-05-09T21:26:14.484+05:30  INFO 10344 --- [http-nio-9002-exec-4] com.revature.loggers.Logging             : method invokeclass com.revature.controller.AllergyController:getAllAllergies()arguments : []
+2023-05-09T21:26:14.485+05:30  INFO 10344 --- [http-nio-9002-exec-4] com.revature.loggers.Logging             : method invokeclass com.revature.serviceImpl.AllergyServiceImpl:allAllergies()arguments : []
+2023-05-09T21:26:14.494+05:30  INFO 10344 --- [http-nio-9002-exec-4] com.revature.loggers.Logging             : class com.revature.serviceImpl.AllergyServiceImpl:allAllergies()Response : [{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}]
+2023-05-09T21:26:14.498+05:30  INFO 10344 --- [http-nio-9002-exec-4] com.revature.loggers.Logging             : class com.revature.controller.AllergyController:getAllAllergies()Response : {"headers":{},"body":[{"allergyId":1,"allergyName":"Animal Allergy","allergyDescription":"Allergy from dogs and cats ."},{"allergyId":2,"allergyName":"Pet Allergy","allergyDescription":"contact in pet started itching"},{"allergyId":3,"allergyName":"Insect Allergy","allergyDescription":"Allergies to insect and bites then start body pain and red rash"},{"allergyId":4,"allergyName":"Pollen Allergy","allergyDescription":"Runny,itchy and congested nose"},{"allergyId":5,"allergyName":"Mold Allergy","allergyDescription":"Coughing,itchy eyes,problem in breath"},{"allergyId":6,"allergyName":"Anaphylaxis Allergy","allergyDescription":"Skin rash,Nausea,Vomiting, Shock"},{"allergyId":7,"allergyName":"Severe Allergy","allergyDescription":"Swelling of the lips,Uterine cramps"},{"allergyId":8,"allergyName":"Urticaria","allergyDescription":"weals,rash on skin,itchy"}],"statusCode":"OK","statusCodeValue":200}

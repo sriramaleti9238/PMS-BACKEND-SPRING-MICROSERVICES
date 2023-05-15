@@ -1,0 +1,4 @@
+com\revature\controllertestcases\PatientController.class
+com\revature\integrationTesting\AutenticationIntegrationTest.class
+com\revature\serciceImplTest\PatientTestCases.class
+com\revature\G1AuthenticationServicePmsApplicationTests.class

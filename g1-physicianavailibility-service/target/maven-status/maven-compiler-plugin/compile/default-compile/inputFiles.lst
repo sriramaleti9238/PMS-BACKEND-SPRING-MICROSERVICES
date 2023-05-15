@@ -1,0 +1,11 @@
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\loggers\Logging.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\G1PhysicianAvailability.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\exceptions\ApiError.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\controller\AvailabilityController.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\entity\PhysicianAvailability.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\repo\PhysicianAvailabilityRepo.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\service\PhysicianAvailabiltiyService.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\exceptions\ResourceNotFoundException.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\exceptions\GlobalExceptionHandler.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\exceptions\MethodArgumentTypeMismatchException.java
+C:\zServices\with-testing-all-microservices\G1-PhysicianAvailability\src\main\java\com\revature\pms\exceptions\ResponseEntityHelper.java

@@ -1,0 +1,26 @@
+2023-05-09T20:20:07.230+05:30  INFO 8764 --- [restartedMain] c.r.G1PatientInfoServiceApplication      : Starting G1PatientInfoServiceApplication using Java 17.0.6 with PID 8764 (C:\zServices\with-testing-all-microservices\g1-patientInfo-service\target\classes started by asus in C:\zServices\with-testing-all-microservices\g1-patientInfo-service)
+2023-05-09T20:20:07.239+05:30  INFO 8764 --- [restartedMain] c.r.G1PatientInfoServiceApplication      : The following 1 profile is active: "local"
+2023-05-09T20:20:07.287+05:30  INFO 8764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-09T20:20:08.232+05:30  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:20:08.365+05:30  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:20:08.591+05:30  INFO 8764 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e3125f31-b537-3ecb-b759-c7b47b5e2eda
+2023-05-09T20:20:09.173+05:30  INFO 8764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2023-05-09T20:20:09.182+05:30  INFO 8764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T20:20:09.182+05:30  INFO 8764 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-09T20:20:09.281+05:30  INFO 8764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T20:20:09.282+05:30  INFO 8764 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
+2023-05-09T20:20:09.911+05:30  INFO 8764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T20:20:10.197+05:30  INFO 8764 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c99cca9
+2023-05-09T20:20:10.200+05:30  INFO 8764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T20:20:10.256+05:30  INFO 8764 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T20:20:10.970+05:30  INFO 8764 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T20:20:11.481+05:30  WARN 8764 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T20:20:12.844+05:30  WARN 8764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-05-09T20:20:13.003+05:30  WARN 8764 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-09T20:20:13.012+05:30  INFO 8764 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-05-09T20:20:13.115+05:30  INFO 8764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2023-05-09T20:20:13.118+05:30  INFO 8764 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-patient-info-9003', name='g1-patient-info', tags=[], address='host.docker.internal', meta={secure=false}, port=9003, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://host.docker.internal:9003/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-05-09T20:20:13.215+05:30  INFO 8764 --- [restartedMain] c.r.G1PatientInfoServiceApplication      : Started G1PatientInfoServiceApplication in 6.491 seconds (process running for 7.031)
+2023-05-09T20:20:13.704+05:30  INFO 8764 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T20:20:13.704+05:30  INFO 8764 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T20:20:13.707+05:30  INFO 8764 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

@@ -1,0 +1,60 @@
+2023-05-09T20:18:42.390+05:30  WARN 11680 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/asus/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/asus/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-05-09T20:18:42.439+05:30  INFO 11680 --- [main] c.r.c.PatientController                  : Starting PatientController using Java 17.0.6 with PID 11680 (started by asus in C:\zServices\with-testing-all-microservices\g1-authentication-service)
+2023-05-09T20:18:42.442+05:30  INFO 11680 --- [main] c.r.c.PatientController                  : The following 1 profile is active: "local"
+2023-05-09T20:18:44.840+05:30  INFO 11680 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-09T20:18:44.841+05:30  INFO 11680 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-09T20:18:44.844+05:30  INFO 11680 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-05-09T20:18:44.888+05:30  INFO 11680 --- [main] c.r.c.PatientController                  : Started PatientController in 3.25 seconds (process running for 5.088)
+2023-05-09T20:18:44.998+05:30  WARN 11680 --- [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/v1/patient/login
+2023-05-09T20:18:45.114+05:30  WARN 11680 --- [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/v1/patient/register
+2023-05-09T20:18:45.135+05:30  INFO 11680 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.revature.serciceImplTest.PatientTestCases]: PatientTestCases does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-09T20:18:45.148+05:30  INFO 11680 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.revature.G1AuthenticationServiceApplication for test class com.revature.serciceImplTest.PatientTestCases
+2023-05-09T20:18:45.307+05:30  WARN 11680 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/asus/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/asus/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-05-09T20:18:45.315+05:30  INFO 11680 --- [main] c.r.serciceImplTest.PatientTestCases     : Starting PatientTestCases using Java 17.0.6 with PID 11680 (started by asus in C:\zServices\with-testing-all-microservices\g1-authentication-service)
+2023-05-09T20:18:45.315+05:30  INFO 11680 --- [main] c.r.serciceImplTest.PatientTestCases     : The following 1 profile is active: "local"
+2023-05-09T20:18:46.258+05:30  INFO 11680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:18:46.329+05:30  INFO 11680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:18:46.539+05:30  INFO 11680 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8167b5a6-e0d8-34eb-b666-0fb5f809bd0d
+2023-05-09T20:18:47.607+05:30  INFO 11680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T20:19:18.115+05:30  INFO 16080 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Starting G1AuthenticationServiceApplication using Java 17.0.6 with PID 16080 (C:\zServices\with-testing-all-microservices\g1-authentication-service\target\classes started by asus in C:\zServices\with-testing-all-microservices\g1-authentication-service)
+2023-05-09T20:19:18.115+05:30  INFO 16080 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : The following 1 profile is active: "local"
+2023-05-09T20:19:18.170+05:30  INFO 16080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-09T20:19:19.523+05:30  INFO 16080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T20:19:19.713+05:30  INFO 16080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180 ms. Found 1 JPA repository interfaces.
+2023-05-09T20:19:19.952+05:30  INFO 16080 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e983c08c-9bc9-3a88-9993-0d6d22b06d5f
+2023-05-09T20:19:20.557+05:30  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9007 (http)
+2023-05-09T20:19:20.563+05:30  INFO 16080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T20:19:20.571+05:30  INFO 16080 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-09T20:19:20.665+05:30  INFO 16080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T20:19:20.665+05:30  INFO 16080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
+2023-05-09T20:19:21.273+05:30  INFO 16080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T20:19:21.568+05:30  INFO 16080 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b0db40
+2023-05-09T20:19:21.570+05:30  INFO 16080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T20:19:21.626+05:30  INFO 16080 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T20:19:22.380+05:30  INFO 16080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T20:19:23.019+05:30  WARN 16080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T20:19:24.395+05:30  WARN 16080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-05-09T20:19:24.544+05:30  WARN 16080 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-09T20:19:24.554+05:30  INFO 16080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-05-09T20:19:24.659+05:30  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9007 (http) with context path ''
+2023-05-09T20:19:24.659+05:30  INFO 16080 --- [restartedMain] o.s.c.c.s.ConsulServiceRegistry          : Registering service with consul: NewService{id='g1-authentication-service-9007', name='g1-authentication-service', tags=[], address='host.docker.internal', meta={secure=false}, port=9007, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='12s', ttl='null', http='http://host.docker.internal:9007/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-05-09T20:19:24.754+05:30  INFO 16080 --- [restartedMain] c.r.G1AuthenticationServiceApplication   : Started G1AuthenticationServiceApplication in 7.123 seconds (process running for 7.687)
+2023-05-09T20:19:25.026+05:30  INFO 16080 --- [http-nio-9007-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T20:19:25.026+05:30  INFO 16080 --- [http-nio-9007-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T20:19:25.028+05:30  INFO 16080 --- [http-nio-9007-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

@@ -1,0 +1,11 @@
+com\revature\pms\repo\PhysicianAvailabilityRepo.class
+com\revature\pms\exceptions\MethodArgumentTypeMismatchException.class
+com\revature\pms\service\PhysicianAvailabiltiyService.class
+com\revature\pms\exceptions\GlobalExceptionHandler.class
+com\revature\pms\entity\PhysicianAvailability.class
+com\revature\pms\loggers\Logging.class
+com\revature\pms\exceptions\ResourceNotFoundException.class
+com\revature\pms\G1PhysicianAvailability.class
+com\revature\pms\exceptions\ResponseEntityHelper.class
+com\revature\pms\exceptions\ApiError.class
+com\revature\pms\controller\AvailabilityController.class
